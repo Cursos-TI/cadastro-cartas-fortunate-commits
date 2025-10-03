@@ -9,7 +9,7 @@ int main() {
   // Área para entrada de dados
   // Área para exibição dos dados da cidade
   int carta[3];
-  char estado[2];
+  char estado[3];
   char nome_da_cidade[50];
   int populacao;
   float area;
@@ -20,7 +20,10 @@ int main() {
   scanf("%d", &carta);
 
   printf("Digite a letra inicial do seu estado, de A a H: \n");
-  scanf("%s", &estado);
+  scanf("%c", &estado);
+
+  printf("\n");
+  sacanf("%c%d", &estado, &carta);
 
   printf("Digite o nome da cidade: \n");
   scanf("%s", &nome_da_cidade);
@@ -37,10 +40,9 @@ int main() {
   printf("Digite a quantidade de pontos turísticos da cidade: \n");
   scanf("%d", &numero_de_pontos_turisticos);
 
-  printf("\n");
   printf("Carta: %d \n", carta);
-  printf("Estado: %s \n", estado);
-  printf("Código: %s \n", carta, estado);
+  printf("Estado: %c \n", estado);
+  printf("Código: %d %c \n", carta, estado);
   printf("Nome da Cidade: %s \n", nome_da_cidade);
   printf("População: %d \n", populacao);
   printf("Área: %f \n", area);
